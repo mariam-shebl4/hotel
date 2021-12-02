@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* nav and logo */
+/* Style the top navigation bar */
+.header{
+    height: 90vh;
+}
+.topnav {
+  overflow: hidden;
+  padding: 0 140px 0 140px;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 14px #000000;
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 2;
+}
+.active{
+    border-bottom: 5px solid #05555c;
+    
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #05555c;
+  color: black;
+}
+.logo{
+    /* display: block; */
+float:left;
+padding:20px;
+}
+
+/*serch*/
+/* .mewtwo-widget .mewtwo-flights-submit_button>button{
+    width: 100px !important;
+} */
+.inputflex{
+    display: flex;
+    background-color: #22c0b8;
+    width: 380px;
+    height: 30px;
+    border-radius: 4px 0 0 4px;
+}
+.startform{
+    background-color: #137a75;
+    padding: 0;
+}
+.inputflex p{
+   padding: 2px 40px 0 40px;
+   color: #fff; 
+}
+.inputflex p:not(.endform) {
+   border-right: 2px solid #ffffff;
+    height: 30px;
+}
+.inputblock{
+    display: block;
+    margin: 51vh 10vh; 
+    padding-right: 88px;
+}
+
+/* .mewtwo-widget--2a08ff6551ce589c36ba46ba977f4df4 .mewtwo-flights {
+    background: #37c8d6 !important;
+    border-color: #248992 !important;
+    border-radius: 2px !important;
+    width: 1515px;
+}
+.mewtwo-widget .mewtwo-hotels {
+    padding: 20px 15px 0!important;
+    border: 1px solid transparent!important;
+    background: #007bff !important;
+    width: 1515px;
+}
+.mewtwo-widget--2a08ff6551ce589c36ba46ba977f4df4 .mewtwo-flights-submit_button button {
+    background: #ffc107 !important;
+    color: #ffffff !important;
+    
+}
+
+.mewtwo-widget--2a08ff6551ce589c36ba46ba977f4df4 .mewtwo-flights .mewtwo-show_hotels-wrapper {
+    background: transparent !important;
+}
+.mewtwo-widget--2a08ff6551ce589c36ba46ba977f4df4 .mewtwo-hotels .mewtwo-show_hotels-wrapper {
+    background: transparent !important;
+} */
+form{
+    background-color: #37c8d6;
+    
+    padding: 5px;
+    display: flex;
+}
+form input {
+    margin-left: 5px;
+    height: 30px;
+    margin-top: 10px;
+    width: 500px;
+}
+
+.inputbtn{
+    background-color: rgb(238, 159, 13);
+    border: none;
+    width: 150px;
+}
+/*----------------------------------------------------------------------------*/
+main{
+    margin: 5% 9% 5% 10%;
+}
+main section {
+    margin: 50px 0 100px 0;
+}
+
+.headt{
+    font-size: 50px;
+}
+.titlesection{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.buttom span{
+    color: #05555c;
+    font-size: 30px;
+    margin: 0 5px 0 5px;
+}
+/* button section2 */
+.secbtn{
+    
+    margin-top: 222px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+    width: 50px;
+    color: rgba(255, 255, 255, 0.61);
+}
+.wholecard{
+    margin: 10px 0px;
+}
+.wholecard .caard{
+    overflow: hidden;
+    clear: both;
+}
+.wholecard .caard h4{
+     position: absolute;
+     color: rgba(255, 235, 205, 0.795);
+     padding: 10px;
+}
+/* first section */
+.caard{
+    /* margin: 20px 10px; */
+    width: 237px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+ .overlay {
+  position: absolute; 
+  bottom: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: 1s;
+}
+
+.overlay:hover {
+  opacity: 1;
+  transition: .5s;
+}
+/* .buttom{
+    text-align: center;
+} */
+.btndetls{
+    position: absolute;
+    margin: 85% 30%;
+    transition: 1s;
+    
+}
+.btndetls:hover{
+    -moz-transform: scale(1.2) translate(0px, -24px);
+-webkit-transform: scale(1.2) translate(0px, -24px);
+-o-transform: scale(1.2) translate(0px, -24px);
+-ms-transform: scale(1.2) translate(0px, -24px);
+transform: scale(1.2) translate(0px, -24px);
+transition: 1s;
+}
+.card{
+    width: 304px;
+    position: relative;
+    overflow: hidden;
+}
+.seco{
+    margin: 10px 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #37c8d6;
+    border-color: #37c8d6;
+}
+.btn-primary:hover{
+   
+    color: #fff;
+    background-color: #05555c;
+    border-color: #05555c;
+
+}
+/*-----------------------------------------------------------------------------------**/
+.thi{
+    height: 200px;
+    margin: 10px 0;
+}
+.thrdsec{
+    margin: 72px 0 260px 0;
+}
+.thibtn{
+  position: absolute;
+  top: 116%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+ background-color: #22c0b8;
+ width: 120px;
+ border-radius: 25px 25px 25px 25px;
+}
+.cardthrd {
+  box-shadow: 1px 0px 0px 1px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+ 
+  
+}
+
+.cardthrd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  position: relative;
+}
+/*social media icons*/
+.social{
+    display: flex;
+    width: 50px;
+    float: right;
+
+}
+.social img{
+    width: 25px;
+    height: 20px;
+}
+.forth{
+    margin: 10px 80px;
+}
+
+/*revwes carosal*/
+.secswiper{
+    background-color: rgb(214, 209, 209);
+    padding: 100px;
+}
+.swiper {
+        width: 100%;
+        height: 100%;
+        display: inherit;
+      }
+
+.swiper-slide {
+text-align: center;
+background: #fff;
+padding: 10px;
+margin: 10px;
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.swmedia{
+    width: 400px;
+    display: none;
+  
+}
+/*card insid*/
+.parcrdswib{
+    text-align: justify;
+    margin: 25px;
+}
+.circlswipflex{
+    display: flex;
+}
+.crdinside{
+    display: block;
+    text-align: justify;
+}
+.generatecssdotcome_circle {width:56px;height:56px;background:url(emplo-1.jpg);-moz-border-radius:28px;-webkit-border-radius:28px;border-radius:28px;line-height:56px;;overflow:hidden; background-size: cover; margin-right: 20px;} 
+  
+/* CSS by GenerateCSS.com */
+.circlswipflex .crdinside h2{
+    font-size: 1.5em;
+}
+.circlswipflex .crdinside h5{
+     font-size: 1em;
+     color: rgb(117, 112, 112);
+}
+/*brand*/
+.brand img{
+    margin-left: 10px;
+}
+/*footer*/
+.bg-primary{
+    background-color: black !important;
+}
+.margfooter{
+    text-align: justify;
+}
+.tele::before{
+  content: "☎";
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.web::before{
+    content: "🌐";
+    display: block;
+    background: url("icon.jpg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.info::before{
+    content: "ℹ";
+    display: block;
+    background: url("icon.jpg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.mob::before{
+    content: "📱";
+    display: block;
+    background: url("icon.jpg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.loca::before{
+    content: "🗺";
+    display: block;
+    background: url("icon.jpg") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+  .header{
+     margin-bottom: 194px;
+      margin-top: 0;
+      height: 140vh;
+      overflow-x: hidden;
+      
+  }
+  .logo{
+      display: none;
+  }
+    .topnav a {
+    float: none;
+    width: 100%;
+    background-color: rgba(22, 112, 103, 0.356);
+  }
+  .topnav{
+      padding: 0;
+  }
+  .inputbtn{
+      width: 180px;
+  }
+  .inputflex{
+      display: none;
+  }
+  .inputblock{
+       margin: 100px 90px 10px 90px;
+       display: block;
+  }
+  form input {
+     width: 200px;
+  }
+  form{
+     display: block;
+  }
+  .caard{
+      width: 400px;
+      
+  }
+
+  .btndetls{
+    margin: 60% 35%;
+    
+}
+ 
+.card{
+
+    width: 400px;
+    
+}
+
+.thi{
+    
+    margin-bottom: 230px ;
+}
+
+.brand{
+      margin: 0 60px;
+}
+
+.swmedia{
+    display: block;
+}
+/* .swiper{
+    display: none;
+} */
+/* .secswiper{
+    display: none;
+} */
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-height: 850px){
+    body{
+        overflow-x: hidden;
+    }
+  .inputblock{
+    display: block;
+   margin: 10vh 18vh;
+   margin-right: 30vh;
+   width: 300px;
+
+}
+
+.inputflex{
+    display: none;
+}
+form{
+    width: 150%;
+    display: block;
+}
+form input {
+     width: 300px;
+  }
+  .inputbtn{
+      text-align: center;
+      width: 300px;
+  }
+main{
+    margin: 5% 12% 5% 12%;
+}
+    .swiper{
+    display: none;
+}
+.titlesection {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.secswiper{
+    display: none;
+}
+.thibtn{
+    display: none;
+}
+}
